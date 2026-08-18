@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@property --color1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #d0f0d5; 
+}
+
+@property --color2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #055817;
+}
+
+@property --color3 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #004910;
+}
+
+    @property --color4 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #edfeed;
+}
+
+*{
+    margin: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'DM Sans', sans-serif;
+    background-color: var(--color4);
+    color: rgb(0, 0, 0)
+}
+
+header {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: groove 3px var(--color3);
+    font-family: 'Libre Caslon Display', serif;
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    background-color: var(--color2);
+    color: var(--color1);
+    font-family: 'Libre Caslon Display', serif;
+    text-align: center;
+    padding: 30px;
+
+}
+
+h1, h3 {
+    color: var(--color2);
+}
+
+a {
+    color: var(--color3);
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+button{
+    font-family: inherit;
+    display: block;
+    background-color: var(--color1);
+    margin: 10px;
+    padding: 6px;
+    text-align: left;
+}

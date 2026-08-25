@@ -1,0 +1,126 @@
+@property --arena{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #57164f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: var(--arena);
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar-item {
+    color:rgb(249, 197, 239);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navbar-item:hover {
+    color: rgb(229, 107, 184);
+    font-weight: bold;
+}
+
+header {
+    background-image: url(Images/cafe.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #e7c0dc
+}
+
+h1 {
+    color:#e7c0dc
+}
+
+header>div {
+    padding: 300px 300px 300px 100px;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--arena);
+    color: #e7c0dc;
+    display: inline-block;
+    margin: 15px 0px 15px;
+}
+
+.button:hover {
+    background-color: aliceblue;
+    color: var(--arena);
+    cursor: pointer;
+}
+
+#section1 {
+    background-color: rgb(236, 202, 247);
+    text-align: left;
+}
+
+#Img-Shop {
+    height:400px;
+}
+
+section, footer {
+    padding: 20px
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 100px;
+    color:#57164f
+}
+
+#section1 p{
+    width: 50%;
+}
+
+#sct1-text{
+    padding-left: 40px;
+}
+
+#section2 {
+    text-align: center;
+}
+
+#section2 table{
+    margin:auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-collapse: collapse;
+}
+
+#section2 td,th {
+    padding: 10px;
+}
+
+#section2 th {
+    background-color: #57164f;
+    color:azure
+}
+
+#section2 td {
+    border-bottom: 2px dashed #57164f;
+}
+
+footer {
+    background-color: #e7c0dc;
+    color:black
+}
+
+footer table {
+    width: 100%;
+}
+
+#contacto {
+    text-align: right;
+}
+
+#redes {
+    margin-top: 15px;
+}

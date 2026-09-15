@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-flow: wrap row;
+    height: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: purple;
+    color: plum;
+}
+
+#logo{
+    width: 32px;
+    height: 32px;
+}
+
+.item-direccion img{
+    width: 24px;
+    margin-right: 10px;
+}
+
+[id|="col"]{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#col-1, #col-3 {
+    flex: 1 1 200px
+}
+
+#col-2 {
+    flex-grow: 3;
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.item-direccion {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+}
+
+#col-2{
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: plum;
+}
+
+#col-2 a:hover{
+    color: fuchsia;
+}
+
+#col-2 a:visited{
+    color: papayawhip;
+}

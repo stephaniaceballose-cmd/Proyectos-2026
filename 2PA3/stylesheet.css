@@ -1,0 +1,39 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color:lavenderblush;
+}
+
+
+#contenedor {
+    border: 2px solid black;
+    background-image: url(Images/pasteleria.png);
+    width: 730px;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+section {
+    margin: 40px;
+}
+
+#Imagen1 {
+    position: relative;
+    top: 250px;
+    left: 150px;
+}
+
+
+#Imagen2 {
+    position:relative;
+    top: 320px;
+    left: 285px;
+}
+
+
+#Imagen3 {
+    position: relative;
+    top: 320px;
+    left: 490px;
+}

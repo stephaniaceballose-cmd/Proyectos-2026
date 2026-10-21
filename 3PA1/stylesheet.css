@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+}
+
+[class^="col-"] {
+    grid-column: span 12;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.col-3 {
+background-color: rgb(127, 255, 163);
+}
+
+.col-4 {
+background-color: rgb(47, 125, 228);
+}
+
+.col-6 {
+background-color: rgb(176, 127, 255);
+}
+
+.col-12 {
+background-color: rgb(255, 127, 253);
+}
+
+/*Breakpoint de Tablet*/
+@media screen and (min-width: 768px) {
+    .col-4 {
+        grid-column: span 4;
+    }
+
+    .col-6 {
+        grid-column: span 6;
+    }
+}
+
+/*Breakpoint de Escritorio*/
+@media screen and (min-width: 992px) {
+    .col-4 {
+        grid-column: span 4;
+        background-color: red;
+    }
+
+    .col-6 {
+        grid-column: span 6;
+        background-color: orange;
+    }
+
+    .col-3 {
+        grid-column: span 3;
+        background-color: yellow;
+    }
+}

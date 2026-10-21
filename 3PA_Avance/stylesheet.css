@@ -1,0 +1,65 @@
+@property --arena{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #d7f4e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: var(--arena);
+    padding: 30px;
+    text-align: justify;
+}
+
+.navbar-item {
+    color:rgb(18, 47, 23);
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navbar-item:hover {
+    color: rgb(68, 132, 73);
+    font-weight: bold;
+}
+
+header {
+    background-image: url(Images/Salad.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #083a12
+}
+
+h1 {
+    color:#013515
+}
+
+header>div {
+    padding: 280px 280px 280px 100px;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--arena);
+    color: #094f28;
+    display: inline-block;
+    margin: 15px 0px 15px;
+}
+
+
+
+
+
+footer {
+    background-color: #01491e;
+    color:rgb(230, 251, 236)
+}
+
+footer table {
+    width: 100%;
+}

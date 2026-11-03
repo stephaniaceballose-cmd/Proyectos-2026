@@ -1,0 +1,277 @@
+.row{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lado-1 {
+  display: flex;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lado-2 {
+  display: flex;
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    background-color: #e9f4d7;
+    padding: 20px;
+}
+
+.navbar-item {
+    color:#122f17;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.navbar-item:hover {
+    color: rgb(68, 132, 73);
+    font-weight: bold;
+}
+
+header>div {
+    background-image: url(Images/salads.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #122f17;
+    align-items: center;
+    padding: 280px 280px 280px 100px;
+}
+
+h1 {
+    color: #01491e;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #e9f4d7;
+    color: #094f28;
+    display: inline-block;
+    margin: 15px 0px;
+    border-radius: 12px 12px;
+}
+
+.button:hover {
+    background-color: green;
+    color: white;
+}
+
+.logo {
+    display: inline-flex;
+    width: 180px;
+    height: 50px;
+}
+
+#section1 {
+    background-color: #e9f4d7;
+    padding: 60px 100px; 
+}
+
+#section1 p{
+    width: 50%;
+}
+
+#section1 h2 {
+    margin-bottom: 30px;   
+    margin-top: 20px;
+    text-align: center;
+}
+
+#section1 h3 {
+    margin-bottom: 30px;   
+    margin-top: 20px;
+    text-align: left;
+}
+
+.cuadros {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.nuevos {
+    width: 350px;
+}
+
+#section1 figure {
+    position: relative;
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cuadros figure {
+    flex: 2;              
+}
+
+#section1 figure img {
+    display: block;       
+    width: 100%;
+}
+
+#section1 figcaption {
+    position: absolute;  
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.enlace {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #01491e;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.enlace:hover {
+    background-color: green;
+}
+
+#section2 {
+    background-color: #d2eff0;
+    padding: 60px 100px; 
+    text-align: center;
+}
+
+#section2 figure {
+    position: relative;
+    margin: 0;
+    border-radius: 20px 20px;
+    overflow: hidden;
+}
+
+#section2 figure img {
+    display: block;       
+    width: 30%;
+}
+
+#section2 h2 {
+    margin-bottom: 30px;   
+    margin-top: 20px;
+    text-align: center;
+}
+
+#section2 h3 {
+    margin-bottom: 30px;   
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comunidad-texto {
+    flex: 1;           
+}
+
+.comunidad-texto p {
+    text-align: left;
+}
+
+.comunidad-texto h2 {
+    text-align: left;
+}
+
+#sct2-text{
+    padding-left: 40px;
+}
+
+#section3 {
+    background-color:rgb(201, 233, 153);   
+    padding: 30px 20px;
+    align-items: center;
+}
+
+.favoritos-galeria {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+    gap: 12px;
+    width: 100%;
+}
+
+.favoritos-galeria figure {
+    margin: 0;
+    width: 100%;
+}
+
+.favoritos-galeria img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;               
+    border-radius: 20px;
+}
+
+.foto3 {
+    grid-column: 1 / -1;            
+    height: 300px;
+}
+
+.foto1 .foto2 {
+    height: 200px;
+    grid-column: 3 / -2; 
+}
+
+.favoritos-texto {
+    margin-top: 60px;
+}
+
+.favoritos-texto h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #01491e;
+    color:rgb(230, 251, 236);
+    font-family: 'Libre Caslon Display', serif;
+    text-align:center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+footer table {
+    width: 100%;
+}
+
+#redes {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    #section3 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;   
+        align-items: center;
+        gap: 50px;
+        padding: 40px 40px;
+    } 
+}

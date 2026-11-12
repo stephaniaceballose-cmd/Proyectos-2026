@@ -142,7 +142,7 @@ nav {
 
 .mensaje h2 {
     margin-bottom: 35px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.5px;
@@ -175,6 +175,11 @@ nav {
     border-radius: 20px 20px;
 }
 
+@media (min-width: 768px) {
+    .mensaje {
+        padding: 60px 70px;
+    }
+}
 
 /*Section2*/
 #section2 {
@@ -222,7 +227,7 @@ nav {
 
 @media (min-width: 768px) {
     #section2 {
-        padding: 60px 70px;
+        padding: 60px 60px;
     }
 
     .conocenos {

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menú | Chopp'd</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Conoce el menú de ensaladas de Chopp'd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet-pago.css">
+    <link rel="icon" type="image/x-icon" href="Images/icono ensalada.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="ArmaTuBowl.html">Arma tu Bowl</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="sucursal.html">Sucursal</a>
+        <a href="Perfil.html">Perfil</a>
+    </div>
+
+    <main>
+        <nav>
+            <div>
+                <header class="barra">
+                    <nav class="lado-1">
+                        <a href="index.html" class="navbar-item">Inicio</a>
+                        <a href="menu.html" class="navbar-item">Menú</a>
+                        <a href="ArmaTuBowl.html" class="navbar-item">Arma tu Bowl</a>
+                    </nav>
+                    <img class="logo" src="Images/logo.png" alt="Logo Chopp'd">
+                    <nav class="lado-2">
+                        <a href="nosotros.html" class="navbar-item">Nosotros</a>
+                        <a href="sucursal.html" class="navbar-item">Sucursal</a>
+                        <a href="Perfil.html" class="navbar-item">Perfil</a>
+                    </nav>
+                    <button class="menu-btn" onclick="openNav()" aria-label="Abrir menú">&#9776;</button>
+                </header>
+            </div>
+        </nav>
+
+
+        <section class="pago">
+            <h1>Finalizar pedido</h1>
+
+            <div class="pago-layout">
+
+                <div class="pago-form">
+                    <div class="caja">
+                        <form action="#" method="post">
+
+                            <div class="fila">
+                                <div class="columna">
+                                    <h2>Datos de entrega</h2>
+
+                                    <label for="fname"><i class="fa fa-user"></i> Nombre completo</label>
+                                    <input type="text" id="fname" name="nombre" placeholder="Angelina Jolie" autocomplete="name" required>
+
+                                    <label for="email"><i class="fa fa-envelope"></i> Correo electrónico</label>
+                                    <input type="email" id="email" name="correo" placeholder="jolie@ejemplo.com" autocomplete="email" required>
+
+                                    <label for="adr"><i class="fa fa-address-card-o"></i> Dirección</label>
+                                    <input type="text" id="adr" name="direccion" placeholder="Av. Nainari 118" autocomplete="street-address" required>
+
+                                    <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                                    <input type="text" id="city" name="ciudad" placeholder="Cd. Obregón" autocomplete="address-level2" required>
+
+                                    <div class="fila-doble">
+                                        <div>
+                                            <label for="state">Estado</label>
+                                            <input type="text" id="state" name="estado" placeholder="Sonora" autocomplete="address-level1">
+                                        </div>
+                                        <div>
+                                            <label for="zip">Código postal</label>
+                                            <input type="text" id="zip" name="cp" placeholder="85000" inputmode="numeric" autocomplete="postal-code">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="columna">
+                                    <h2>Pago</h2>
+
+                                    <p class="etiqueta">Tarjetas aceptadas</p>
+                                    <div class="iconos-tarjetas">
+                                        <i class="fa fa-cc-visa" style="color:#000080;" aria-label="Visa"></i>
+                                        <i class="fa fa-cc-amex" style="color:#0000ff;" aria-label="American Express"></i>
+                                        <i class="fa fa-cc-mastercard" style="color:#ff0000;" aria-label="Mastercard"></i>
+                                        <i class="fa fa-cc-discover" style="color:#ffa500;" aria-label="Discover"></i>
+                                    </div>
+
+                                    <label for="cname">Nombre en la tarjeta</label>
+                                    <input type="text" id="cname" name="titular" placeholder="Angelina Jolie" 
+                                    autocomplete="cc-name">
+
+                                    <label for="ccnum">Número de tarjeta</label>
+                                    <input type="text" id="ccnum" name="tarjeta" placeholder="644 993 8966" 
+                                    inputmode="numeric" autocomplete="cc-number">
+
+                                    <label for="expmonth">Mes de vencimiento</label>
+                                    <input type="text" id="expmonth" name="mes" placeholder="06" inputmode="numeric" 
+                                    autocomplete="cc-exp-month">
+
+                                    <div class="fila-doble">
+                                        <div>
+                                            <label for="expyear">Año</label>
+                                            <input type="text" id="expyear" name="anio" placeholder="2032" 
+                                            inputmode="numeric" autocomplete="cc-exp-year">
+                                        </div>
+                                        <div>
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="007" 
+                                            inputmode="numeric" autocomplete="cc-csc">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label class="check">
+                                <input type="checkbox" checked name="misma_direccion"> Enviar a la misma dirección de 
+                                entrega
+                            </label>
+                            <input type="submit" value="Confirmar pedido" class="btn">
+                        </form>
+                    </div>
+                </div>
+
+                <aside class="resumen">
+                    <div class="caja">
+                        <h2 class="resumen-titulo">Tu pedido<span class="carrito-cant"><i class="fa-shopping-cart"></i> 
+                        <b>4</b></span></h2>
+                        <p class="linea"><a href="Ingredientes.html">Ensalada Groot</a> <span>$225</span></p>
+                        <p class="linea"><a href="#">Ensalada Tomato</a> <span>$198</span></p>
+                        <p class="linea"><a href="#">Jugo de Durazno</a> <span>$45</span></p>
+                        <p class="linea"><a href="#">Limonada</a> <span>$40</span></p>
+                        <hr>
+                        <p class="linea total">Total <span><b>$538</b></span></p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-contenido">
+                <div class="footer-info">
+                   <img class="footer-logo" src="Images/logo2.png" alt="Logo Chopp'd">
+
+                   <div class="footer-columnas">
+                      <div>
+                         <h3>Horario</h3>
+                         <p>Lunes a Sábado, 10:00 a 21:00</p>
+                         <p>Domingo, 8:00 a 14:00</p>
+                     </div>
+                     <div>
+                         <h3>Dirección</h3>
+                         <p>Av. Nainari 118, Cd. Obregón, Son.</p>
+                         <p>Tel. (644) 811 916</p>
+                     </div>
+                     </div>
+                <div id="redes">
+                     <a href="https://www.facebook.com/?locale=es_LA"><img src="Images/facebook.png" alt="Facebook" width="32" height="32"></a>
+                     <a href="https://www.instagram.com"><img src="Images/instagram.png" alt="Instagram" width="32" height="32"></a>
+                     <a href="https://www.whatsapp.com/?lang=es"><img src="Images/whatsapp.png" alt="WhatsApp" width="32" height="32"></a>
+                     <a href="https://www.tiktok.com/es/"><img src="Images/tik-tok.png" alt="Tik Tok" width="32" height="32"></a>
+                </div>
+             </div>
+              <form class="footer-form">
+                     <p>Entérate de las novedades.</p>
+                     <div class="footer-campo">
+                        <input type="email" placeholder="Tu correo aquí" aria-label="Correo electrónico">
+                        <button type="submit">Suscribirme</button>
+                </div>
+                <label class="footer-check">
+                     <input type="checkbox">
+                     Acepto recibir noticias y promociones de Chopp'd.
+                </label>
+              </form>
+            </div>
+            <div class="footer-copy">
+               <p>© 2026 Chopp'd. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

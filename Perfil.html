@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menú | Chopp'd</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Conoce el menú de ensaladas de Chopp'd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet-perfil.css">
+    <link rel="icon" type="image/x-icon" href="Images/icono ensalada.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="ArmaTuBowl.html">Arma tu Bowl</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="sucursal.html">Sucursal</a>
+        <a href="Perfil.html" class="navbar-item activo">Perfil</a>
+    </div>
+
+    <main>
+        <nav>
+            <div>
+                <header class="barra">
+                    <nav class="lado-1">
+                        <a href="index.html" class="navbar-item">Inicio</a>
+                        <a href="menu.html" class="navbar-item">Menú</a>
+                        <a href="ArmaTuBowl.html" class="navbar-item">Arma tu Bowl</a>
+                    </nav>
+                    <img class="logo" src="Images/logo.png" alt="Logo Chopp'd">
+                    <nav class="lado-2">
+                        <a href="nosotros.html" class="navbar-item">Nosotros</a>
+                        <a href="sucursal.html" class="navbar-item">Sucursal</a>
+                        <a href="Perfil.html" class="navbar-item">Perfil</a>
+                    </nav>
+                    <button class="menu-btn" onclick="openNav()" aria-label="Abrir menú">&#9776;</button>
+                </header>
+            </div>
+        </nav>
+
+<section class="foto-nosotros">
+            <img src="Images/Fondo.jpeg" alt="Mesa con ensaladas frescas y bebidas">        
+        </section>
+        <section class="titulo">
+            <h1>Crea tu Perfil</h1>
+            <div class="linea"></div>
+
+  <form action="#" class="perfil">
+ 
+  <h2>Datos Personales</h2>
+
+  <div class="fila">
+    <div><label>Nombre</label><input name="nombre" placeholder="Stephania" required></div>
+    <div><label>Apellido</label><input name="apellido" placeholder="Ceballos" required></div>
+  </div>
+
+  <div class="fila">
+    <div><label>Teléfono</label><input type="tel" name="telefono" placeholder="644 009 4007"></div>
+    <div><label>Correo electrónico</label><input type="email" name="correo" placeholder="ejemplo@gmail.com" required></div>
+  </div>
+
+  <div class="fila">
+    <div><label>Cumpleaños (mes)</label><input name="mes" placeholder="Mes"></div>
+    <div><label>Día</label><input name="dia" placeholder="Día"></div>
+  </div>
+
+  <h2>Dirección de envío</h2>
+
+  <div class="fila">
+    <div><label>Nombre de quien recibe</label><input name="destinatario" placeholder="Juan Pérez"></div>
+    <div><label>Teléfono de contacto</label><input type="tel" name="telefono-envio" placeholder="644 123 4567"></div>
+  </div>
+
+  <div class="fila">
+    <div><label>Calle y número</label><input name="calle" placeholder="Av. Sonora 123"></div>
+    <div><label>Número interior</label><input name="interior" placeholder="15"></div>
+  </div>
+
+  <div class="fila">
+    <div><label>País</label><input name="pais" placeholder="México"></div>
+    <div><label>Estado</label><input name="estado" placeholder="Sonora"></div>
+    <div><label>Ciudad</label><input name="ciudad" placeholder="Cd. Obregón"></div>
+    <div><label>Código postal</label><input name="cp" placeholder="85000"></div>
+  </div>
+
+  <small>Tu información se guardará de forma segura y confidencial.</small>
+
+  <button type="submit">Guardar perfil</button>
+
+</form>
+
+        </section>
+        <footer>
+            <div class="footer-contenido">
+                <div class="footer-info">
+                   <img class="footer-logo" src="Images/logo2.png" alt="Logo Chopp'd">
+
+                   <div class="footer-columnas">
+                      <div>
+                         <h3>Horario</h3>
+                         <p>Lunes a Sábado, 10:00 a 21:00</p>
+                         <p>Domingo, 8:00 a 14:00</p>
+                     </div>
+                     <div>
+                         <h3>Dirección</h3>
+                         <p>Av. Nainari 118, Cd. Obregón, Son.</p>
+                         <p>Tel. (644) 811 916</p>
+                     </div>
+                     </div>
+                <div id="redes">
+                     <a href="https://www.facebook.com/?locale=es_LA"><img src="Images/facebook.png" alt="Facebook" width="32" height="32"></a>
+                     <a href="https://www.instagram.com"><img src="Images/instagram.png" alt="Instagram" width="32" height="32"></a>
+                     <a href="https://www.whatsapp.com/?lang=es"><img src="Images/whatsapp.png" alt="WhatsApp" width="32" height="32"></a>
+                     <a href="https://www.tiktok.com/es/"><img src="Images/tik-tok.png" alt="Tik Tok" width="32" height="32"></a>
+                </div>
+             </div>
+              <form class="footer-form">
+                     <p>Entérate de las novedades.</p>
+                     <div class="footer-campo">
+                        <input type="email" placeholder="Tu correo aquí" aria-label="Correo electrónico">
+                        <button type="submit">Suscribirme</button>
+                </div>
+                <label class="footer-check">
+                     <input type="checkbox">
+                     Acepto recibir noticias y promociones de Chopp'd.
+                </label>
+              </form>
+            </div>
+            <div class="footer-copy">
+               <p>© 2026 Chopp'd. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
